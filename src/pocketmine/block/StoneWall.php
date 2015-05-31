@@ -37,7 +37,7 @@ class StoneWall extends Transparent{
 	}
 
 	public function getHardness(){
-		return 30;
+		return 2;
 	}
 
 	public function getName(){
@@ -49,7 +49,7 @@ class StoneWall extends Transparent{
 	}
 
 	protected function recalculateBoundingBox(){
-
+		//TODO: Check this code
 		$flag = $this->canConnect($this->getSide(2));
 		$flag1 = $this->canConnect($this->getSide(3));
 		$flag2 = $this->canConnect($this->getSide(4));
